@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint App</title>
+
+    <style type="text/css">
+        
+        .defaultText {
+             user-select: none;
+             font-family: Courier, serif;
+             text-align: center;
+            }
+        canvas {
+            /* position: absolute; */
+            
+            border: 1px solid black;
+
+            background-color: whitesmoke;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #controls{ 
+            position: absolute;
+            top:100px;
+            left:5px;
+            padding:20px;
+            border: 1px solid gray;
+            background-color: lightskyblue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px lightskyblue;
+            }
+        button {
+            user-select: none;
+            background-color: rgb(231, 231, 231);
+            color: black;
+            size: 70px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-color: black;
+            outline: none;
+            }
+
+        button:hover {
+            background-color: #b8bcbfc4
+            }
+
+        button:active {
+            background-color: #727278;
+            box-shadow: 0 1px #666;
+            transform: translateY(4px);
+                }       
+    </style>
+    <script src="canvas2.js"></script>
+
+</head>
+<body>
+
+    <!-- <div align="center">
+        <canvas id="myCanvas" width="1000" height="600">Canvas not supported !!!!</canvas>
+    
+        <div style="position:absolute;left:1385px;top:685px;">
+            <button type="button">
+                <div id="clear" class="defaultText">clear</div>
+            </button>
+        </div>
+    </div> -->
+
+
+
+    <div align="center">
+
+    <canvas id="canvas" width="1000" height="600" ></canvas>
+
+
+
+    <div style="position:absolute;left:1005px;top:65px;">
+        <button type="button">
+            <div id="clear" class="defaultText">clear</div>
+        </button>
+    </div>
+    </div>
+
+    <!-- <div id="buttons">
+        <p><label>Clear Page><input type="button" id="clear" value="Clear"></label></p>
+      </div>
+         -->
+    <div id="controls">
+        <p><label>Fill: <input id="fillBox" type="checkbox" checked="checked"></label></p>
+    </div>
+</div>
+
+</body>
+</html>
